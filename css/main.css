@@ -1,0 +1,452 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+.theme_btn, .hero__layout .theme_btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 5px 25px;
+  border-radius: 2px;
+}
+
+.about_btn {
+  border: 1px solid #9B7755;
+  padding: 13px 40px;
+  font-weight: 500;
+  color: #9B7755;
+}
+.about_btn:hover {
+  color: #9B7755;
+}
+
+.hero__layout h1 {
+  font-weight: 700;
+  font-size: 64px;
+  color: #ffffff;
+  line-height: 77px;
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 45px;
+}
+
+.hero__layout .theme_btn {
+  background: rgba(21, 27, 33, 0.76);
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+  padding: 15px 60px;
+}
+.hero__layout .theme_btn:hover {
+  color: #9B7755;
+}
+
+header .navbar-nav .nav-item .nav-link {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.about__content p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-align: justify;
+}
+
+.flip__tittle, .about__content_head {
+  position: relative;
+  height: auto;
+  width: fit-content;
+}
+.flip__tittle::after, .about__content_head::after {
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  content: "";
+  width: 128px;
+  height: 1px;
+  background: transparent;
+  background-image: url(../images/after_heading_icon.svg);
+  background-size: 100% 100%;
+}
+
+body, * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "inter";
+}
+
+body {
+  background: #1A2129;
+  color: #ffffff;
+}
+body ::selection {
+  background: #1A2129;
+  color: #9B7755;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #9b7755 #1a2129;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #1a2129;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #9b7755;
+  border-radius: 15px;
+  border: 0px solid #ffffff;
+}
+
+.wrapper {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin-bottom: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+hr, footer hr {
+  border: 1px solid rgba(174, 174, 174, 0.5);
+}
+
+footer hr {
+  border-color: #6A6A6A;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  background: rgba(22, 27, 34, 0.76);
+  padding: 22px 0px;
+  backdrop-filter: blur(23px);
+  z-index: 999;
+}
+header .navbar-nav .nav-item {
+  margin-right: 32px;
+}
+header .navbar-nav .nav-item .nav-link {
+  color: #ffffff;
+  transition: 0.3s all;
+}
+header .navbar-nav .nav-item .nav-link:hover {
+  color: #9B7755;
+  transition: 0.5s all;
+}
+header .navbar-toggler-icon {
+  background-image: url(../images/menu.png);
+}
+
+.hero {
+  height: 100vh;
+  background-image: url(../images/hero.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero__layout {
+  height: 100%;
+}
+.about {
+  height: auto;
+  padding-top: 130px;
+}
+.about__layout {
+  position: relative;
+  width: 90%;
+}
+.about__layout::after {
+  position: absolute;
+  top: 10%;
+  left: 12%;
+  height: 100%;
+  width: 100%;
+  content: "";
+  border: 1px solid #9B7755;
+  z-index: -1;
+}
+.about__layout img {
+  width: 100%;
+}
+.about__content {
+  color: #ffffff;
+}
+.about__content_head {
+  font-size: 36px;
+  margin-top: 7%;
+  margin-bottom: 40px;
+}
+.about__content_head::after {
+  left: -18px !important;
+}
+.about__content p {
+  margin-bottom: 30px;
+}
+.about__content_tiger {
+  width: 170px;
+  text-align: end;
+  padding: 10px 0px;
+  padding-bottom: 30px;
+}
+.about__content_tiger img {
+  width: 21px;
+}
+
+.companies_logos {
+  padding: 80px 0px 60px 0px;
+}
+.companies_logos .slider_logo {
+  height: 100%;
+}
+.companies_logos .slider_logo .swiper-slide img {
+  width: 100%;
+}
+
+.flip {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  color: #ffffff;
+}
+.flip__tittle {
+  padding-left: 0;
+  margin-bottom: 60px;
+}
+
+.flip__card {
+  width: calc(25% - 30px);
+  padding: 10px;
+  border: 3px solid #9B7755;
+}
+.flip__card .flip-card {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+.flip__card .flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip__card .flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip__card .flip-card-front, .flip__card .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+.flip__card .flip-card-front {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  position: relative;
+}
+.flip__card .flip-card-front img {
+  width: 100%;
+}
+.flip__card .flip-card-front::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  z-index: 99;
+  background: linear-gradient(360deg, rgba(0, 0, 0, 0.4) -2.75%, rgba(0, 0, 0, 0) 94.65%);
+}
+.flip__card .flip-card-front h6 {
+  position: absolute;
+  bottom: 20px;
+  text-align: center;
+  width: 100%;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.flip__card .flip-card-back {
+  background-color: #161A1D;
+  color: white;
+  transform: rotateY(180deg);
+  position: absolute;
+  top: 0;
+  padding: 27px 15px;
+  text-align: start;
+  overflow-y: scroll;
+}
+.flip__card .flip-card-back h6 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  margin-bottom: 10px;
+}
+.flip__card .flip-card-back p {
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 23px;
+}
+
+footer {
+  padding: 50px 0px;
+}
+footer .logo {
+  margin-bottom: 10px;
+}
+footer .logo-side .logo_content {
+  padding-right: 30%;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+}
+footer .footer__menu h6 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  margin-bottom: 25px;
+}
+footer .footer__menu ul li {
+  margin-bottom: 16px;
+}
+footer .footer__menu li a {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  color: #D2D2D2;
+}
+footer hr {
+  margin-top: 50px;
+}
+footer .social_link li {
+  margin-right: 8px;
+}
+footer .social_link li a img {
+  width: 24px;
+}
+
+.loading {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #1A2129 url(../images/LOGO-Sport.svg) center no-repeat;
+  z-index: 999999999999999;
+  overflow: hidden;
+}
+
+@media (max-width: 1199px) {
+  .hero__layout h1 {
+    font-size: 58px;
+  }
+}
+@media (max-width: 992px) {
+  header .navbar-nav .nav-item {
+    margin-right: 0;
+  }
+  .nav-link {
+    padding: 24px 36px;
+    border-bottom: 0.5px solid #FFFFFF;
+  }
+  .navbar-nav {
+    width: 60%;
+    background: #1A2129;
+  }
+  .navbar .container {
+    position: relative;
+  }
+  .navbar-collapse {
+    position: absolute;
+    width: 100%;
+    right: 25px;
+    top: 135%;
+  }
+  .flip__card {
+    width: 370px;
+    padding: 7px;
+  }
+  .flip__card {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  footer .logo-side .logo_content {
+    padding-right: 0%;
+  }
+}
+@media (max-width: 768px) {
+  .hero__layout h1 {
+    font-size: 42px;
+    line-height: 50px;
+    margin-bottom: 35px;
+  }
+  .flip__card {
+    margin-bottom: 20px;
+    margin-right: 0px;
+  }
+  footer .footer__menu {
+    margin-bottom: 25px;
+  }
+}
+@media (max-width: 575px) {
+  .navbar-nav {
+    width: 80%;
+  }
+  .navbar-collapse {
+    top: 108%;
+  }
+  .nav-link {
+    padding: 13px 15px;
+    border-bottom: 0.5px solid #FFFFFF;
+  }
+  header {
+    padding: 5px 0px;
+  }
+  .flip__card {
+    padding: 7px;
+    margin: auto;
+    margin-bottom: 15px;
+  }
+  .flip__card {
+    width: 300px;
+  }
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  footer {
+    padding: 15px 0px;
+  }
+  footer hr {
+    margin-top: 0px;
+  }
+  .about {
+    padding-top: 60px;
+  }
+  .companies_logos {
+    padding: 35px 0px 35px 0px;
+  }
+}
+@media (max-width: 480px) {
+  .hero__layout h1 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 30px;
+  }
+}/*# sourceMappingURL=main.css.map */
